@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D2A32741DD744C3001C011E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A32731DD744C3001C011E /* HomeViewController.swift */; };
+		7D2A32761DD74867001C011E /* IMDbad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D2A32751DD74867001C011E /* IMDbad.jpg */; };
+		7D2A32781DD74F0B001C011E /* Batman-BenAffleck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D2A32771DD74F0B001C011E /* Batman-BenAffleck.jpg */; };
+		7D2A327A1DD7718D001C011E /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A32791DD7718D001C011E /* HomeCollectionViewCell.swift */; };
+		7D369B261DD9271300D774CF /* IMDbad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D369B241DD9271200D774CF /* IMDbad.jpg */; };
+		7D369B271DD9271300D774CF /* logo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D369B251DD9271300D774CF /* logo4.jpg */; };
+		7D369B2A1DD9272800D774CF /* Batman-BenAffleck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D369B281DD9272800D774CF /* Batman-BenAffleck.jpg */; };
+		7D369B2B1DD9272800D774CF /* film.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D369B291DD9272800D774CF /* film.jpg */; };
+		7D4BED371DD815450044C05D /* film.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D4BED361DD815450044C05D /* film.jpg */; };
+		7DB1052F1DD8D17900B41AA0 /* Atami-Display.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DB1052B1DD8D17900B41AA0 /* Atami-Display.otf */; };
+		7DB105301DD8D17A00B41AA0 /* Atami-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DB1052C1DD8D17900B41AA0 /* Atami-Light.otf */; };
+		7DB105311DD8D17A00B41AA0 /* Atami-Oblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DB1052D1DD8D17900B41AA0 /* Atami-Oblique.otf */; };
+		7DB105321DD8D17A00B41AA0 /* Atami-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DB1052E1DD8D17900B41AA0 /* Atami-Regular.otf */; };
+		7DB105341DD8D18E00B41AA0 /* Atami-LightOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7DB105331DD8D18E00B41AA0 /* Atami-LightOblique.otf */; };
+		7DB105361DD8DE3F00B41AA0 /* logo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DB105351DD8DE3F00B41AA0 /* logo4.jpg */; };
+		7DF4E14A1DD7C4DB00830FC8 /* logo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7DF4E1481DD7C4DB00830FC8 /* logo3.jpg */; };
+		DE4828F91DD3A960007768C2 /* BriefMovieCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4828F81DD3A960007768C2 /* BriefMovieCollectionViewController.swift */; };
+		DE4828FB1DD3AA06007768C2 /* BriefMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4828FA1DD3AA06007768C2 /* BriefMovieCollectionViewCell.swift */; };
+		DE4828FD1DD3BA6E007768C2 /* FullMovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4828FC1DD3BA6E007768C2 /* FullMovieDetailViewController.swift */; };
 		DEAB717E1DD248CB003B3AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB717D1DD248CB003B3AF5 /* AppDelegate.swift */; };
 		DEAB71831DD248CB003B3AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEAB71811DD248CB003B3AF5 /* Main.storyboard */; };
 		DEAB71851DD248CB003B3AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEAB71841DD248CB003B3AF5 /* Assets.xcassets */; };
@@ -15,9 +34,31 @@
 		DEAB71921DD24931003B3AF5 /* FullMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB71911DD24931003B3AF5 /* FullMovie.swift */; };
 		DEAB71961DD24969003B3AF5 /* BriefMovieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB71951DD24969003B3AF5 /* BriefMovieTableViewController.swift */; };
 		DEAB719A1DD249DF003B3AF5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB71991DD249DF003B3AF5 /* APIManager.swift */; };
+		DEAB719D1DD263C6003B3AF5 /* Soundtrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB719C1DD263C6003B3AF5 /* Soundtrack.swift */; };
+		DEAB719F1DD270AD003B3AF5 /* AlbumImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAB719E1DD270AD003B3AF5 /* AlbumImage.swift */; };
+		DEBDAB2F1DD3E31F00D6B57F /* SoundtrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBDAB2E1DD3E31F00D6B57F /* SoundtrackCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D2A32731DD744C3001C011E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7D2A32751DD74867001C011E /* IMDbad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMDbad.jpg; path = ../../../IMDbad.jpg; sourceTree = "<group>"; };
+		7D2A32771DD74F0B001C011E /* Batman-BenAffleck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Batman-BenAffleck.jpg"; path = "../../../../Downloads/Batman-BenAffleck.jpg"; sourceTree = "<group>"; };
+		7D2A32791DD7718D001C011E /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		7D369B241DD9271200D774CF /* IMDbad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMDbad.jpg; path = "../../IMDbad resources/IMDbad.jpg"; sourceTree = "<group>"; };
+		7D369B251DD9271300D774CF /* logo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo4.jpg; path = "../../IMDbad resources/logo4.jpg"; sourceTree = "<group>"; };
+		7D369B281DD9272800D774CF /* Batman-BenAffleck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Batman-BenAffleck.jpg"; path = "../../IMDbad resources/Batman-BenAffleck.jpg"; sourceTree = "<group>"; };
+		7D369B291DD9272800D774CF /* film.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = film.jpg; path = "../../IMDbad resources/film.jpg"; sourceTree = "<group>"; };
+		7D4BED361DD815450044C05D /* film.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = film.jpg; path = ../../../film.jpg; sourceTree = "<group>"; };
+		7DB1052B1DD8D17900B41AA0 /* Atami-Display.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Atami-Display.otf"; path = "../../../Atami - Full Font 2/Atami-Display.otf"; sourceTree = "<group>"; };
+		7DB1052C1DD8D17900B41AA0 /* Atami-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Atami-Light.otf"; path = "../../../Atami - Full Font 2/Atami-Light.otf"; sourceTree = "<group>"; };
+		7DB1052D1DD8D17900B41AA0 /* Atami-Oblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Atami-Oblique.otf"; path = "../../../Atami - Full Font 2/Atami-Oblique.otf"; sourceTree = "<group>"; };
+		7DB1052E1DD8D17900B41AA0 /* Atami-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Atami-Regular.otf"; path = "../../../Atami - Full Font 2/Atami-Regular.otf"; sourceTree = "<group>"; };
+		7DB105331DD8D18E00B41AA0 /* Atami-LightOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Atami-LightOblique.otf"; path = "../../../Atami - Full Font 2/Atami-LightOblique.otf"; sourceTree = "<group>"; };
+		7DB105351DD8DE3F00B41AA0 /* logo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo4.jpg; path = ../../../logo4.jpg; sourceTree = "<group>"; };
+		7DF4E1481DD7C4DB00830FC8 /* logo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = logo3.jpg; path = ../../../logo3.jpg; sourceTree = "<group>"; };
+		DE4828F81DD3A960007768C2 /* BriefMovieCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BriefMovieCollectionViewController.swift; sourceTree = "<group>"; };
+		DE4828FA1DD3AA06007768C2 /* BriefMovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BriefMovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE4828FC1DD3BA6E007768C2 /* FullMovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullMovieDetailViewController.swift; sourceTree = "<group>"; };
 		DEAB717A1DD248CB003B3AF5 /* AC3.2IMDbad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AC3.2IMDbad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEAB717D1DD248CB003B3AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEAB71821DD248CB003B3AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,6 +69,9 @@
 		DEAB71911DD24931003B3AF5 /* FullMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullMovie.swift; sourceTree = "<group>"; };
 		DEAB71951DD24969003B3AF5 /* BriefMovieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BriefMovieTableViewController.swift; sourceTree = "<group>"; };
 		DEAB71991DD249DF003B3AF5 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DEAB719C1DD263C6003B3AF5 /* Soundtrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Soundtrack.swift; sourceTree = "<group>"; };
+		DEAB719E1DD270AD003B3AF5 /* AlbumImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumImage.swift; sourceTree = "<group>"; };
+		DEBDAB2E1DD3E31F00D6B57F /* SoundtrackCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundtrackCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +85,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D369B2C1DD9274A00D774CF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7D369B251DD9271300D774CF /* logo4.jpg */,
+				7D369B241DD9271200D774CF /* IMDbad.jpg */,
+				7D369B281DD9272800D774CF /* Batman-BenAffleck.jpg */,
+				7D369B291DD9272800D774CF /* film.jpg */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		DEAB71711DD248CB003B3AF5 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +130,8 @@
 			children = (
 				DEAB718F1DD24912003B3AF5 /* BriefMovie.swift */,
 				DEAB71911DD24931003B3AF5 /* FullMovie.swift */,
+				DEAB719C1DD263C6003B3AF5 /* Soundtrack.swift */,
+				DEAB719E1DD270AD003B3AF5 /* AlbumImage.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -81,6 +139,7 @@
 		DEAB71941DD24949003B3AF5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7D369B2C1DD9274A00D774CF /* Images */,
 				DEAB71811DD248CB003B3AF5 /* Main.storyboard */,
 				DEAB71841DD248CB003B3AF5 /* Assets.xcassets */,
 				DEAB71861DD248CB003B3AF5 /* LaunchScreen.storyboard */,
@@ -91,6 +150,12 @@
 		DEAB71971DD24971003B3AF5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7D2A32731DD744C3001C011E /* HomeViewController.swift */,
+				7D2A32791DD7718D001C011E /* HomeCollectionViewCell.swift */,
+				DE4828F81DD3A960007768C2 /* BriefMovieCollectionViewController.swift */,
+				DE4828FC1DD3BA6E007768C2 /* FullMovieDetailViewController.swift */,
+				DE4828FA1DD3AA06007768C2 /* BriefMovieCollectionViewCell.swift */,
+				DEBDAB2E1DD3E31F00D6B57F /* SoundtrackCollectionViewCell.swift */,
 				DEAB71951DD24969003B3AF5 /* BriefMovieTableViewController.swift */,
 			);
 			name = "View Controllers";
@@ -99,8 +164,18 @@
 		DEAB71981DD2499D003B3AF5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7DB105331DD8D18E00B41AA0 /* Atami-LightOblique.otf */,
+				7DB105351DD8DE3F00B41AA0 /* logo4.jpg */,
+				7DB1052B1DD8D17900B41AA0 /* Atami-Display.otf */,
+				7DB1052C1DD8D17900B41AA0 /* Atami-Light.otf */,
+				7DB1052D1DD8D17900B41AA0 /* Atami-Oblique.otf */,
+				7DB1052E1DD8D17900B41AA0 /* Atami-Regular.otf */,
 				DEAB717D1DD248CB003B3AF5 /* AppDelegate.swift */,
+				7DF4E1481DD7C4DB00830FC8 /* logo3.jpg */,
+				7D2A32751DD74867001C011E /* IMDbad.jpg */,
+				7D4BED361DD815450044C05D /* film.jpg */,
 				DEAB71891DD248CB003B3AF5 /* Info.plist */,
+				7D2A32771DD74F0B001C011E /* Batman-BenAffleck.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -172,9 +247,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D369B2B1DD9272800D774CF /* film.jpg in Resources */,
+				7DB105311DD8D17A00B41AA0 /* Atami-Oblique.otf in Resources */,
 				DEAB71881DD248CB003B3AF5 /* LaunchScreen.storyboard in Resources */,
+				7D369B261DD9271300D774CF /* IMDbad.jpg in Resources */,
+				7DB105321DD8D17A00B41AA0 /* Atami-Regular.otf in Resources */,
+				7D2A32781DD74F0B001C011E /* Batman-BenAffleck.jpg in Resources */,
+				7D369B2A1DD9272800D774CF /* Batman-BenAffleck.jpg in Resources */,
+				7D4BED371DD815450044C05D /* film.jpg in Resources */,
+				7DF4E14A1DD7C4DB00830FC8 /* logo3.jpg in Resources */,
+				7D369B271DD9271300D774CF /* logo4.jpg in Resources */,
 				DEAB71851DD248CB003B3AF5 /* Assets.xcassets in Resources */,
+				7DB105341DD8D18E00B41AA0 /* Atami-LightOblique.otf in Resources */,
+				7DB105361DD8DE3F00B41AA0 /* logo4.jpg in Resources */,
+				7D2A32761DD74867001C011E /* IMDbad.jpg in Resources */,
+				7DB105301DD8D17A00B41AA0 /* Atami-Light.otf in Resources */,
 				DEAB71831DD248CB003B3AF5 /* Main.storyboard in Resources */,
+				7DB1052F1DD8D17900B41AA0 /* Atami-Display.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,10 +275,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEAB71921DD24931003B3AF5 /* FullMovie.swift in Sources */,
+				DE4828FB1DD3AA06007768C2 /* BriefMovieCollectionViewCell.swift in Sources */,
 				DEAB71961DD24969003B3AF5 /* BriefMovieTableViewController.swift in Sources */,
+				DE4828FD1DD3BA6E007768C2 /* FullMovieDetailViewController.swift in Sources */,
 				DEAB719A1DD249DF003B3AF5 /* APIManager.swift in Sources */,
+				7D2A327A1DD7718D001C011E /* HomeCollectionViewCell.swift in Sources */,
+				DEAB719D1DD263C6003B3AF5 /* Soundtrack.swift in Sources */,
+				DEAB719F1DD270AD003B3AF5 /* AlbumImage.swift in Sources */,
 				DEAB717E1DD248CB003B3AF5 /* AppDelegate.swift in Sources */,
+				DE4828F91DD3A960007768C2 /* BriefMovieCollectionViewController.swift in Sources */,
 				DEAB71901DD24912003B3AF5 /* BriefMovie.swift in Sources */,
+				DEBDAB2F1DD3E31F00D6B57F /* SoundtrackCollectionViewCell.swift in Sources */,
+				7D2A32741DD744C3001C011E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +448,7 @@
 				DEAB718E1DD248CB003B3AF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

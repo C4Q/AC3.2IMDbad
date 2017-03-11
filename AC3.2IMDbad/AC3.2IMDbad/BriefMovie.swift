@@ -15,6 +15,9 @@ class BriefMovie {
     internal let imdbID: String
     internal let type: String
     internal let poster: String
+    internal var titleSearchString: String {
+        return self.title.replacingOccurrences(of: " ", with: "%20")
+    }
     
     init(title: String, year: String, imdbID: String, type: String, poster: String) {
         self.title = title

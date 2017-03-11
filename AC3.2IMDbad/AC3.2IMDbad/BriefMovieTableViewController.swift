@@ -53,19 +53,30 @@ class BriefMovieTableViewController: UITableViewController {
             
         }
         
-        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let thisBriefMovie = briefMovies[indexPath.row]
-        let myAPIEndpoint = "https://www.omdbapi.com/?i=\(thisBriefMovie.imdbID)"
-        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + myAPIEndpoint)
-        APIManager.manager.getData(endPoint: myAPIEndpoint) { (data: Data?) in
+        
+        let fullMovieAPIEndpoint = "https://www.omdbapi.com/?i=\(thisBriefMovie.imdbID)"
+        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>" + fullMovieAPIEndpoint)
+        APIManager.manager.getData(endPoint: fullMovieAPIEndpoint) { (data: Data?) in
             guard let unwrappedData = data else { return }
             let thisFullMovie = FullMovie.getFullMovie(from: unwrappedData)
             dump(thisFullMovie)
         }
+        
+        let soundtrackAPIEndpoint = "https://api.spotify.com/v1/search?q=\(thisBriefMovie.titleSearchString)&type=album&limit=50"
+        APIManager.manager.getData(endPoint: soundtrackAPIEndpoint) { (data: Data?) in
+            guard let unwrappedData = data else { return }
+            let arrayOfSoundtracks = Soundtrack.buildSoundtrackArray(from: unwrappedData)
+            dump(arrayOfSoundtracks)
+        }
+        
+        let imdbString = "http://www.imdb.com/title/" + thisBriefMovie.imdbID
+        guard let url = URL(string: imdbString) else { return }
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
 
 }

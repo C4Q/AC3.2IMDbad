@@ -16,10 +16,11 @@ class FullMovie {
     let plot: String
     let posterURL: String
     let runtime: String
-    let cast: [String]
-    let rating: String
+    let cast: String
+    let imdbRating: String
+    let rated: String
     
-    init(title: String, year: String, genre: String, runtime: String, plot: String, posterURL: String, cast: [String], rating: String) {
+    init(title: String, year: String, genre: String, runtime: String, plot: String, posterURL: String, cast: String, imdbRating: String, rated: String) {
         self.title = title
         self.year = year
         self.genre = genre
@@ -27,7 +28,8 @@ class FullMovie {
         self.posterURL = posterURL
         self.runtime = runtime
         self.cast = cast
-        self.rating = rating
+        self.imdbRating = imdbRating
+        self.rated = rated
     }
     
     convenience init?(withDict: [String: String]) {
@@ -37,12 +39,11 @@ class FullMovie {
             let fmPlot = withDict["Plot"],
             let fmPoster = withDict["Poster"],
             let fmRuntime = withDict["Runtime"],
-            let fmActors = withDict["Actors"],
-            let fmRating = withDict["imdbRating"] {
+            let fmCast = withDict["Actors"],
+            let fmRating = withDict["imdbRating"],
+            let fmRated = withDict["Rated"] {
             
-            let fmCast = fmActors.components(separatedBy: ", ")
-            
-            self.init(title: fmTitle, year: fmYear, genre: fmGenre, runtime: fmRuntime, plot: fmPlot, posterURL: fmPoster, cast: fmCast, rating: fmRating)
+            self.init(title: fmTitle, year: fmYear, genre: fmGenre, runtime: fmRuntime, plot: fmPlot, posterURL: fmPoster, cast: fmCast, imdbRating: fmRating, rated: fmRated)
         } else {
             return nil
         }
@@ -55,6 +56,7 @@ class FullMovie {
             guard let movieDict = movieJSONData as? [String: String] else { print("\n\n\n\n\n______________________\n\n"); return nil }
             
             let thisFullMovie = FullMovie(withDict: movieDict)
+            print(thisFullMovie)
             return thisFullMovie
             
         }
