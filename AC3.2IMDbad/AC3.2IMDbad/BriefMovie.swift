@@ -8,6 +8,10 @@
 
 import Foundation
 
+enum BriefMovieModelParseError: Error {
+    case results(json: Any)
+}
+
 class BriefMovie {
     
     internal let title: String
@@ -15,6 +19,9 @@ class BriefMovie {
     internal let imdbID: String
     internal let type: String
     internal let poster: String
+    internal var titleSearchString: String {
+        return self.title.replacingOccurrences(of: " ", with: "%20")
+    }
     
     init(title: String, year: String, imdbID: String, type: String, poster: String) {
         self.title = title
@@ -24,7 +31,7 @@ class BriefMovie {
         self.poster = poster
     }
     
-    convenience init?(withDict: [String: String]) {
+    convenience init?(withDict: [String: String]) throws {
         if let bmTitle = withDict["Title"],
             let bmId = withDict["imdbID"],
             let bmYear = withDict["Year"],
@@ -34,32 +41,6 @@ class BriefMovie {
             self.init(title: bmTitle, year: bmYear, imdbID: bmId, type: bmType, poster: bmPoster)
         }
         else {
-            return nil
-        }
-    }
-    
-    static func buildBriefMovieArray(from data: Data) -> [BriefMovie]? {
-        
-        do {
-            let movieJSONdata: Any = try JSONSerialization.jsonObject(with: data, options: [])
-            guard let resultDict = movieJSONdata as? [String: AnyObject] else {
-                print("first error")
-                return nil
-            }
-            
-            guard let arrOfMovieDict = resultDict["Search"] as? [[String: String]] else { return nil }
-            
-            var arrOfBriefMovies: [BriefMovie] = []
-            
-            for dict in arrOfMovieDict {
-                if let thisBriefMovie = BriefMovie(withDict: dict) {
-                    arrOfBriefMovies.append(thisBriefMovie)
-                }
-            }
-            return arrOfBriefMovies
-            
-        } catch let error as NSError {
-            print("error here \(error)")
             return nil
         }
     }
